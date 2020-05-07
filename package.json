@@ -8,8 +8,7 @@
         "dev": "nodemon app.js"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://AgroXs@bitbucket.org/AgroXs/aboki-mart.git"
+        "type": "git"
     },
     "keywords": [],
     "author": "",
