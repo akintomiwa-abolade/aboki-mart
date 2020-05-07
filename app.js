@@ -26,7 +26,7 @@ app.use(passport.session());
 
 // api routes
 let sellerApi = require('./routes/seller');
-let buyerApi = require('./routes/buyer')
+let buyerApi = require('./routes/buyer');
 
 app.use('/api/v1', sellerApi,buyerApi);
 

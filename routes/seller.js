@@ -7,4 +7,6 @@ const SellerController = require('../controllers/SellerController');
 
 router.post('/seller/login', SellerController.login);
 
+router.post('/seller/create-currency-sales', auth, SellerController.createCurrencySales);
+
 module.exports = router;

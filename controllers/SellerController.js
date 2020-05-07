@@ -1,4 +1,5 @@
 const User = require('../database/models/').User;
+const CurrencySale = require('../database/models/').CurrencySale;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -48,6 +49,32 @@ class SellerController{
 
         }catch (e) {
             res.send(500);
+        }
+    }
+
+    static async createCurrencySales(req, res){
+        try{
+            let auth = req.decoded.user.is_auth;
+            if(auth == 'seller'){
+                const {currency_type, rate} = req.body;
+                let createCurrency = {
+                    currency_type: currency_type,
+                    rate: rate,
+                    seller_id: req.decoded.user.id
+                }
+                CurrencySale.create(createCurrency)
+                    .then(result=>{
+                    return res.status(200).json({
+                        error:false,
+                        message: 'Currency Sales Created.',
+                        data: result
+                    })
+                }).catch(err=>{
+                    return res.sendStatus(500);
+                })
+            }
+        }catch(e){
+            return res.sendStatus(500);
         }
     }
 }
