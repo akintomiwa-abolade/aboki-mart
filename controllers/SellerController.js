@@ -1,5 +1,4 @@
 const User = require('../database/models/').User;
-const callbacks = require('../config/callbacks.js');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 

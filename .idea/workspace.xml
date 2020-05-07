@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b380ff1f-a0a4-414e-a735-e19b5e35d19b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middlewares/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BuyerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BuyerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/buyer.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/buyer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adetula\WebstormProjects\AbokiMart" />
+      <recent name="C:\Users\adetula\WebstormProjects\AbokiMart\middlewares" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -52,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588844894690</updated>
-      <workItem from="1588844909250" duration="2282000" />
+      <workItem from="1588844909250" duration="2725000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(helmet());
-app.use(express.static(__dirname + '/public'));
 
 // express session middleware
 app.use(session({
