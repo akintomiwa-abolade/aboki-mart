@@ -1,4 +1,7 @@
 const User = require('../database/models/').User;
+const callbacks = require('../config/callbacks.js');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 class SellerController{
     // Seller Login here
@@ -9,7 +12,7 @@ class SellerController{
                 where:{email: email}
             })
                 .then(user=>{
-                    if(developer.length == 0){
+                    if(user.length == 0){
                         res.status(400).json({message: "Sorry, Seller does not exist."});
                     }else{
                         var passwordIsValid = bcrypt.compareSync(req.body.password, user[0].dataValues.password.trim());
