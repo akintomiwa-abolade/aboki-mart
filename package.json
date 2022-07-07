@@ -28,7 +28,7 @@
         "helmet": "^3.21.3",
         "jsonwebtoken": "^8.5.1",
         "lodash": "^4.17.15",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "passport": "^0.4.0",
         "pg": "^7.13.0",
         "pg-hstore": "^2.3.3",
